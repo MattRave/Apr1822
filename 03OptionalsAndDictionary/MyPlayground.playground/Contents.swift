@@ -97,11 +97,15 @@ let value = counter["#"]
 ///
 
 let digits = [1,3,4,6]
-let sum = digits.reduce(into: 0) { acummulation, nextValue in
+let sumOne = digits.reduce(0) { acummulation, nextValue in
+    acummulation + nextValue
+}
+print(sumOne)
+let sumTwo = digits.reduce(into: 0) { acummulation, nextValue in
     acummulation += nextValue
 }
 //let sum = digits.reduce(into: 0) { $0 += $1 }
-print(sum)
+print(sumTwo)
 
 let letters = ["a", "a", "b", "b", "c"]
 let reducedCounter = letters.reduce(into: [:]) { accum, letter in
