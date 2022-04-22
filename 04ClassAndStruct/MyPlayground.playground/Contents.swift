@@ -132,3 +132,26 @@ print(boat.hasFlag)
 /// value type: passed by copy
 /// Copy-on-write
 /// When changed, needs to be var (not let)
+
+
+/// Copy on write
+struct ArrayHolder {
+    var value = 10
+    lazy var arr = Array(0...10_000_000)
+    mutating func changesValue() {
+        arr.count
+        value += 1
+    }
+}
+
+print("Creating Array Holder: 10 mil elements")
+var myArrayHolder = ArrayHolder()
+myArrayHolder.value
+
+print("changing value")
+myArrayHolder.changesValue()
+myArrayHolder.value
+
+print("changing value")
+myArrayHolder.changesValue()
+myArrayHolder.value
