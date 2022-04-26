@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_8_MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;&gt;&gt;&gt;&gt;&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEu-BF-Fr2">
+                                <rect key="frame" x="153.5" y="134" width="107.5" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="xmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R84-ua-lvW">
+                                <rect key="frame" x="90" y="206.5" width="234" height="127"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icA-TA-s09">
+                                <rect key="frame" x="20" y="398" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TwC-yz-MGa">
+                                <rect key="frame" x="97.5" y="573" width="219" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="blue"/>
+                                    <segment title="red"/>
+                                    <segment title="green"/>
+                                    <segment title="black"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-PG-qdb">
+                                <rect key="frame" x="99.5" y="666" width="215" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="moon"/>
+                                    <segment title="cloud"/>
+                                    <segment title="fire"/>
+                                    <segment title="water"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd6-Pv-giB">
+                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="submit">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXm-2d-xVZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-JE-3pD">
+                                <rect key="frame" x="146" y="342" width="122" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="R84-ua-lvW" firstAttribute="top" secondItem="qEu-BF-Fr2" secondAttribute="bottom" constant="37" id="2M3-vO-2rN"/>
+                            <constraint firstItem="xe4-JE-3pD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bM-NQ-8J8"/>
+                            <constraint firstItem="sd6-Pv-giB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E26-5G-qem"/>
+                            <constraint firstItem="icA-TA-s09" firstAttribute="top" secondItem="xe4-JE-3pD" secondAttribute="bottom" constant="21" id="EVA-Xh-Xww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sd6-Pv-giB" secondAttribute="bottom" constant="20" id="JNd-Rf-zYu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R84-ua-lvW" secondAttribute="trailing" constant="90" id="PFo-6p-CJG"/>
+                            <constraint firstItem="ro1-PG-qdb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGw-5f-vz1"/>
+                            <constraint firstItem="TwC-yz-MGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGJ-6l-WTi"/>
+                            <constraint firstAttribute="bottom" secondItem="ro1-PG-qdb" secondAttribute="bottom" constant="199" id="TRC-ed-IEW"/>
+                            <constraint firstItem="icA-TA-s09" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="398" id="dZe-xh-xmV"/>
+                            <constraint firstItem="icA-TA-s09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e1P-6U-fxF"/>
+                            <constraint firstItem="R84-ua-lvW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPW-0S-sYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sd6-Pv-giB" secondAttribute="trailing" constant="20" id="kSn-lb-KOQ"/>
+                            <constraint firstItem="xe4-JE-3pD" firstAttribute="top" secondItem="R84-ua-lvW" secondAttribute="bottom" constant="8" symbolic="YES" id="kaE-Dc-c4s"/>
+                            <constraint firstItem="qEu-BF-Fr2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lic-HS-MA9"/>
+                            <constraint firstItem="R84-ua-lvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="mMb-z3-wpe"/>
+                            <constraint firstItem="ro1-PG-qdb" firstAttribute="top" secondItem="TwC-yz-MGa" secondAttribute="bottom" constant="62" id="oCu-Ib-5f6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="icA-TA-s09" secondAttribute="trailing" constant="20" id="oiV-XA-0bR"/>
+                            <constraint firstItem="icA-TA-s09" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFE-DM-90x"/>
+                            <constraint firstItem="qEu-BF-Fr2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="vEc-X6-qdK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyImage" destination="R84-ua-lvW" id="jdS-LD-d6n"/>
+                        <outlet property="colorPicker" destination="TwC-yz-MGa" id="CUz-fi-hsA"/>
+                        <outlet property="myLabel" destination="qEu-BF-Fr2" id="bIZ-Ia-BxI"/>
+                        <outlet property="photoPicker" destination="ro1-PG-qdb" id="djx-2B-SWy"/>
+                        <outlet property="textInput" destination="icA-TA-s09" id="W8t-ur-D0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
