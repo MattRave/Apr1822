@@ -11,30 +11,9 @@
 		C9ABADA3281722F300BE45DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADA2281722F300BE45DA /* SceneDelegate.swift */; };
 		C9ABADA5281722F300BE45DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADA4281722F300BE45DA /* ViewController.swift */; };
 		C9ABADA8281722F300BE45DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ABADA6281722F300BE45DA /* Main.storyboard */; };
-		C9ABADAB281722F300BE45DA /* _7_enums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADA9281722F300BE45DA /* _7_enums.xcdatamodeld */; };
 		C9ABADAD281722F500BE45DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ABADAC281722F500BE45DA /* Assets.xcassets */; };
 		C9ABADB0281722F500BE45DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ABADAE281722F500BE45DA /* LaunchScreen.storyboard */; };
-		C9ABADBB281722F600BE45DA /* _7_enumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADBA281722F600BE45DA /* _7_enumsTests.swift */; };
-		C9ABADC5281722F600BE45DA /* _7_enumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADC4281722F600BE45DA /* _7_enumsUITests.swift */; };
-		C9ABADC7281722F600BE45DA /* _7_enumsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABADC6281722F600BE45DA /* _7_enumsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C9ABADB7281722F600BE45DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9ABAD95281722F300BE45DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9ABAD9C281722F300BE45DA;
-			remoteInfo = "07-enums";
-		};
-		C9ABADC1281722F600BE45DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9ABAD95281722F300BE45DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9ABAD9C281722F300BE45DA;
-			remoteInfo = "07-enums";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C9ABAD9D281722F300BE45DA /* 07-enums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-enums.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,33 +21,13 @@
 		C9ABADA2281722F300BE45DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9ABADA4281722F300BE45DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9ABADA7281722F300BE45DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C9ABADAA281722F300BE45DA /* _7_enums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _7_enums.xcdatamodel; sourceTree = "<group>"; };
 		C9ABADAC281722F500BE45DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9ABADAF281722F500BE45DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9ABADB1281722F500BE45DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9ABADB6281722F600BE45DA /* 07-enumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "07-enumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9ABADBA281722F600BE45DA /* _7_enumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_enumsTests.swift; sourceTree = "<group>"; };
-		C9ABADC0281722F600BE45DA /* 07-enumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "07-enumsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9ABADC4281722F600BE45DA /* _7_enumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_enumsUITests.swift; sourceTree = "<group>"; };
-		C9ABADC6281722F600BE45DA /* _7_enumsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_enumsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C9ABAD9A281722F300BE45DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9ABADB3281722F600BE45DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9ABADBD281722F600BE45DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				C9ABAD9F281722F300BE45DA /* 07-enums */,
-				C9ABADB9281722F600BE45DA /* 07-enumsTests */,
-				C9ABADC3281722F600BE45DA /* 07-enumsUITests */,
 				C9ABAD9E281722F300BE45DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				C9ABAD9D281722F300BE45DA /* 07-enums.app */,
-				C9ABADB6281722F600BE45DA /* 07-enumsTests.xctest */,
-				C9ABADC0281722F600BE45DA /* 07-enumsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,26 +62,8 @@
 				C9ABADD428172D7400BE45DA /* model */,
 				C9ABADAC281722F500BE45DA /* Assets.xcassets */,
 				C9ABADB1281722F500BE45DA /* Info.plist */,
-				C9ABADA9281722F300BE45DA /* _7_enums.xcdatamodeld */,
 			);
 			path = "07-enums";
-			sourceTree = "<group>";
-		};
-		C9ABADB9281722F600BE45DA /* 07-enumsTests */ = {
-			isa = PBXGroup;
-			children = (
-				C9ABADBA281722F600BE45DA /* _7_enumsTests.swift */,
-			);
-			path = "07-enumsTests";
-			sourceTree = "<group>";
-		};
-		C9ABADC3281722F600BE45DA /* 07-enumsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C9ABADC4281722F600BE45DA /* _7_enumsUITests.swift */,
-				C9ABADC6281722F600BE45DA /* _7_enumsUITestsLaunchTests.swift */,
-			);
-			path = "07-enumsUITests";
 			sourceTree = "<group>";
 		};
 		C9ABADD428172D7400BE45DA /* model */ = {
@@ -182,42 +119,6 @@
 			productReference = C9ABAD9D281722F300BE45DA /* 07-enums.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9ABADB5281722F600BE45DA /* 07-enumsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9ABADCD281722F600BE45DA /* Build configuration list for PBXNativeTarget "07-enumsTests" */;
-			buildPhases = (
-				C9ABADB2281722F600BE45DA /* Sources */,
-				C9ABADB3281722F600BE45DA /* Frameworks */,
-				C9ABADB4281722F600BE45DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9ABADB8281722F600BE45DA /* PBXTargetDependency */,
-			);
-			name = "07-enumsTests";
-			productName = "07-enumsTests";
-			productReference = C9ABADB6281722F600BE45DA /* 07-enumsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C9ABADBF281722F600BE45DA /* 07-enumsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9ABADD0281722F600BE45DA /* Build configuration list for PBXNativeTarget "07-enumsUITests" */;
-			buildPhases = (
-				C9ABADBC281722F600BE45DA /* Sources */,
-				C9ABADBD281722F600BE45DA /* Frameworks */,
-				C9ABADBE281722F600BE45DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9ABADC2281722F600BE45DA /* PBXTargetDependency */,
-			);
-			name = "07-enumsUITests";
-			productName = "07-enumsUITests";
-			productReference = C9ABADC0281722F600BE45DA /* 07-enumsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,14 +131,6 @@
 				TargetAttributes = {
 					C9ABAD9C281722F300BE45DA = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					C9ABADB5281722F600BE45DA = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = C9ABAD9C281722F300BE45DA;
-					};
-					C9ABADBF281722F600BE45DA = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = C9ABAD9C281722F300BE45DA;
 					};
 				};
 			};
@@ -255,8 +148,6 @@
 			projectRoot = "";
 			targets = (
 				C9ABAD9C281722F300BE45DA /* 07-enums */,
-				C9ABADB5281722F600BE45DA /* 07-enumsTests */,
-				C9ABADBF281722F600BE45DA /* 07-enumsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,20 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9ABADB4281722F600BE45DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9ABADBE281722F600BE45DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -295,42 +172,11 @@
 			files = (
 				C9ABADA5281722F300BE45DA /* ViewController.swift in Sources */,
 				C9ABADA1281722F300BE45DA /* AppDelegate.swift in Sources */,
-				C9ABADAB281722F300BE45DA /* _7_enums.xcdatamodeld in Sources */,
 				C9ABADA3281722F300BE45DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9ABADB2281722F600BE45DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9ABADBB281722F600BE45DA /* _7_enumsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9ABADBC281722F600BE45DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9ABADC7281722F600BE45DA /* _7_enumsUITestsLaunchTests.swift in Sources */,
-				C9ABADC5281722F600BE45DA /* _7_enumsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9ABADB8281722F600BE45DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9ABAD9C281722F300BE45DA /* 07-enums */;
-			targetProxy = C9ABADB7281722F600BE45DA /* PBXContainerItemProxy */;
-		};
-		C9ABADC2281722F600BE45DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9ABAD9C281722F300BE45DA /* 07-enums */;
-			targetProxy = C9ABADC1281722F600BE45DA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9ABADA6281722F300BE45DA /* Main.storyboard */ = {
@@ -522,78 +368,6 @@
 			};
 			name = Release;
 		};
-		C9ABADCE281722F600BE45DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.-7-enumsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/07-enums.app/07-enums";
-			};
-			name = Debug;
-		};
-		C9ABADCF281722F600BE45DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.-7-enumsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/07-enums.app/07-enums";
-			};
-			name = Release;
-		};
-		C9ABADD1281722F600BE45DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.-7-enumsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "07-enums";
-			};
-			name = Debug;
-		};
-		C9ABADD2281722F600BE45DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.-7-enumsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "07-enums";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,38 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9ABADCD281722F600BE45DA /* Build configuration list for PBXNativeTarget "07-enumsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9ABADCE281722F600BE45DA /* Debug */,
-				C9ABADCF281722F600BE45DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9ABADD0281722F600BE45DA /* Build configuration list for PBXNativeTarget "07-enumsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9ABADD1281722F600BE45DA /* Debug */,
-				C9ABADD2281722F600BE45DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C9ABADA9281722F300BE45DA /* _7_enums.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C9ABADAA281722F300BE45DA /* _7_enums.xcdatamodel */,
-			);
-			currentVersion = C9ABADAA281722F300BE45DA /* _7_enums.xcdatamodel */;
-			path = _7_enums.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C9ABAD95281722F300BE45DA /* Project object */;
 }
