@@ -8,6 +8,6 @@
 import Foundation
 
 struct Customer {
-    var vehicles: [VehicleProtocol] = []
+    var vehicles: [Motorized] = []
     let name: String
 }

@@ -67,11 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				9E4534EA281C1DD80080236C /* ViewController.swift */,
-				9E4534FD281C1E180080236C /* AccelShop.swift */,
-				9E4534FB281C1E180080236C /* Customer.swift */,
-				9E4534FE281C1E180080236C /* Mechanic.swift */,
-				9E4534FC281C1E180080236C /* Ticket.swift */,
 				9E4534FF281C1E180080236C /* Vehicle.swift */,
+				9E4534FB281C1E180080236C /* Customer.swift */,
+				9E4534FC281C1E180080236C /* Ticket.swift */,
+				9E4534FE281C1E180080236C /* Mechanic.swift */,
+				9E4534FD281C1E180080236C /* AccelShop.swift */,
 				9E4534F4281C1DDA0080236C /* Info.plist */,
 				9E4534FA281C1DE30080236C /* SupportingFiles */,
 			);

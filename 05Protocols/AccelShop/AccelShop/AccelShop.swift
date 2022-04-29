@@ -71,7 +71,7 @@ class AccelShop {
         print("Customer \(name): Your car is ready")
     }
     
-    func receive(vehicles: [VehicleProtocol], name: String) {
+    func receive(vehicles: [Motorized], name: String) {
         vehicles.forEach { vehicle in
             let ticket = Ticket(vehicle: vehicle, categories: [.accel, .braking], customerName: name)
             add(inspection: ticket)

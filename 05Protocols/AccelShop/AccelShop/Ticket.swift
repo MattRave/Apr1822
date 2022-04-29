@@ -8,7 +8,7 @@
 import Foundation
 
 protocol Inspectable {
-    var vehicle: VehicleProtocol { get }
+    var vehicle: Motorized { get }
     var categories: [Ticket.Category] { get }
 }
 protocol Repairable {}
@@ -17,12 +17,13 @@ protocol Billable: Inspectable & Repairable {
 }
 
 struct Ticket: Billable {
-    var vehicle: VehicleProtocol
+    var vehicle: Motorized
     var categories: [Category]
     var customerName: String
     enum Category: String {
         case accel
         case braking
+        case tire
     }
 }
 

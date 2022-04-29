@@ -29,6 +29,7 @@ class Mechanic {
     func inspect(inspection: Billable) -> Bool {
         inspection.categories.forEach { category in
             print("inspecting \(inspection.vehicle.model): \(category.rawValue)")
+            ///
         }
         return random % 2 == 0
     }
@@ -36,6 +37,7 @@ class Mechanic {
     func repair(inspection: Billable) -> Bool {
         inspection.categories.forEach { category in
             print("repairing \(inspection.vehicle.model): \(category.rawValue)")
+            /// require equipment to repair
         }
         return random % 2 == 0
     }

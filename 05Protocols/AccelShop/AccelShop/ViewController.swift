@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         let mechanicA = Mechanic()
         let mechanicB = Mechanic()
         shop.mechanics = [mechanicA, mechanicB]
+        
         shop.start()
         
     }
