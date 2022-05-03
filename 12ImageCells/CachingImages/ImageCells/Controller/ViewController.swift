@@ -7,6 +7,8 @@
 
 import UIKit
 
+var count = 0
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -23,13 +25,11 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "AlbumCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AlbumCell")
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 400
         getData()
     }
 
     func getData() {
-        Webservice().getAlbums { albums in
+        ImageCache.shared.getAlbums { albums in
             self.albums = albums
             print(albums)
         }
@@ -47,9 +47,8 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let album = albums[indexPath.row]
-        if indexPath.row < 6 {
-            cell.configure(album: album)
-        }
+        
+        cell.configure(album: album)
         
         return cell
     }

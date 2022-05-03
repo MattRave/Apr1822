@@ -33,7 +33,7 @@
                         <color key="backgroundColor" red="1" green="0.8097075413" blue="0.9350488388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="150" id="DBw-21-qiv"/>
-                            <constraint firstAttribute="height" priority="999" constant="150" id="TCk-Ec-tTw"/>
+                            <constraint firstAttribute="height" priority="999" constant="200" id="TCk-Ec-tTw"/>
                         </constraints>
                     </imageView>
                 </subviews>

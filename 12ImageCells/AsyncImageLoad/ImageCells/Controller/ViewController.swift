@@ -23,13 +23,11 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "AlbumCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AlbumCell")
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 400
         getData()
     }
 
     func getData() {
-        Webservice().getAlbums { albums in
+        ImageCache().getAlbums { albums in
             self.albums = albums
             print(albums)
         }
@@ -46,13 +44,37 @@ extension ViewController: UITableViewDataSource {
         guard let cell = (tableView.dequeueReusableCell(withIdentifier: "AlbumCell") as? AlbumCell) else {
             return UITableViewCell()
         }
+        
         let album = albums[indexPath.row]
-        if indexPath.row < 6 {
-            cell.configure(album: album)
-        }
+        cell.configure(album: album)
+        loadAndCancelPreviousTask(imageStr: album.imageUrl, cell: cell)
         
         return cell
     }
     
+    func loadAndCancelPreviousTask(imageStr: String, cell: AlbumCell) {
+        if let image = ImageCache.shared.publicCache.object(forKey: imageStr.hiRes as NSString) {
+            cell.albumImage.image = image
+            return
+        }
+        let startedTaskKey = ImageCache.shared.getImage(imageStr: imageStr.hiRes) { image in
+            DispatchQueue.main.async {
+                cell.albumImage.image = image
+            }
+        }
+        cell.onReuse = {
+            if let startedTaskKey = startedTaskKey {
+                ImageCache.shared.pendingTasks[startedTaskKey]?.cancel()
+                ImageCache.shared.pendingTasks.removeValue(forKey: imageStr.hiRes)
+            }
+        }
+    }
     
+    
+}
+
+extension String {
+    var hiRes: String {
+        self.replacingOccurrences(of: "100x100", with: "600x600")
+    }
 }
