@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "AlbumCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AlbumCell")
         tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 400
         getData()
     }
 
