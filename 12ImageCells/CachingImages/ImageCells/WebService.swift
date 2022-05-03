@@ -14,7 +14,6 @@ class ImageCache {
     private init() {}
     
     var cache = NSCache<NSString, UIImage>()
-    var runningTask: [String: URLSessionDataTask] = [:]
     
     func getAlbums(completion: @escaping ([Album]) -> Void) {
         guard let url = URL(string: musicStr) else {
