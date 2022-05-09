@@ -69,10 +69,14 @@ class ViewController: UIViewController {
             print("my color: \(color.rawValue)")
         }
             // MARK: associated values
+        
+        
         enum Barcode{
             case qr(String)
             case barcode(Int, Int, Int)
         }
+        
+        
         let myBarcode = Barcode.barcode(101, 102, 103)
         let myBarcode2 = Barcode.qr("qweqr1238974m")
         
@@ -82,6 +86,8 @@ class ViewController: UIViewController {
         case .barcode(let location, let serial, let destionation):
             print("your location \(location) your destination \(destionation)your serial \(serial)")
         }
+        
+        
             // MARK: short hand sytax
     switch myBarcode {
     case let .qr(code):
@@ -92,6 +98,7 @@ class ViewController: UIViewController {
         
         
             //MARK: raw values
+        
         enum Funiture: Int{
             case chair = 0
             case table = 1
@@ -105,11 +112,13 @@ class ViewController: UIViewController {
             case blue
             case green
         }
+        
         enum Drinks: Int{
-            case tea
-            case coffee
-            case water
+            case tea //0
+            case coffee //1
+            case water //2
         }
+        
         print(Color.red.rawValue)
         
             //MARK: initializing using rawValues
