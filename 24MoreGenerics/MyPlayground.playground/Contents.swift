@@ -13,6 +13,7 @@ let myInts = myConcat(first: 1, second: 200)
 var num: Int = 0
 var name: String = ""
 func start<T>(completion: (T) -> Void) {
+    
 }
 
 start { result in
@@ -37,7 +38,6 @@ func fetchData<T: Decodable>(str: String, completion: @escaping (T) -> Void) {
     }.resume()
 }
 
-
 struct Music: Decodable {
     let musicName: String
 }
@@ -59,14 +59,44 @@ fetchData(str: "zxcv") { decoded in
 protocol DecodableResource {
     associatedtype ModelType: Decodable
     var url: URL { get }
+    func decode(data: Data) -> ModelType?
 }
 
 struct MusicResource: DecodableResource {
     typealias ModelType = Music
     var url = URL(string: "https://rss.applemarketingtools.com/api/v2/us/music/most-played/10/albums.json")!
     
-    func decode(data: Data) {
+    func decode(data: Data) -> ModelType? {
         let decoded = try? JSONDecoder().decode(ModelType.self, from: data)
         print(decoded?.musicName ?? "")
+        return decoded
     }
 }
+
+
+/*
+func fetchData(str: String, completion: @escaping (Drink) -> Void) {
+    guard let url = URL(string: str) else { return }
+    URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data = data else {
+            return
+        }
+        do {
+            let decoded = try JSONDecoder().decode(Drink.self, from: data)
+            completion(decoded)
+        } catch {}
+    }.resume()
+}
+func fetchData(str: String, completion: @escaping (Music) -> Void) {
+    guard let url = URL(string: str) else { return }
+    URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data = data else {
+            return
+        }
+        do {
+            let decoded = try JSONDecoder().decode(Music.self, from: data)
+            completion(decoded)
+        } catch {}
+    }.resume()
+}
+ */
